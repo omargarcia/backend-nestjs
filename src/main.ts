@@ -6,7 +6,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   app.enableCors({
-    origin: ['https://frontend-nextjs-h5vj1lcfj-omargarcia.vercel.app'], // Allow specific origins
+    origin: 'https://frontend-nextjs-h5vj1lcfj-omargarcia.vercel.app', // Allow specific origins
     methods: 'GET,POST,PUT,DELETE', // Allow specific HTTP methods
     credentials: true, // Allow credentials (cookies, authorization headers)
     allowedHeaders: 'Content-Type, Authorization', // Allow specific headers
