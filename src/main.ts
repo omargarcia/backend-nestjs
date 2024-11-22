@@ -7,7 +7,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin: 'https://frontend-nextjs-zeta.vercel.app', // Allow specific origins
-    methods: 'GET,POST,PUT,DELETE,PATCH', // Allow specific HTTP methods
+    methods: 'GET,POST,PUT,DELETE,PATCH,OPTIONS', // Allow specific HTTP methods
     credentials: true, // Allow credentials (cookies, authorization headers)
     allowedHeaders: 'Content-Type, Authorization', // Allow specific headers
   });
