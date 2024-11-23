@@ -6,6 +6,21 @@
             "use": "@vercel/node"
         }
     ],
+    "headers": [
+        {
+            "source": "/api/(.*)",
+            "headers": [
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "https://backend-nestjs-psi.vercel.app"
+                },
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=3600"
+                }
+            ]
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",
